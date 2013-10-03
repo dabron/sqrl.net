@@ -51,6 +51,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="MasterKeyTests.cs" />
+    <Compile Include="SiteKeyTests.cs" />
+    <Compile Include="UtilityTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SecureQuickResponseLogin\SecureQuickResponseLogin.csproj">

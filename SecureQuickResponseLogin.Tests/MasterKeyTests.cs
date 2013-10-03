@@ -35,7 +35,7 @@ namespace SecureQuickResponseLogin.Tests
 		{
 			var master = MasterKey.Generate();
 			var key = master.Key;
-			Assert.AreEqual(key.Count * 8, 512);
+			Assert.AreEqual(512, key.Count * 8);
 		}
 	}
 }

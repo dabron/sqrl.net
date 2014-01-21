@@ -11,8 +11,7 @@ namespace SecureQuickResponseLogin
 
 		public SiteKey(MasterKey master, string site)
 		{
-			var encoding = new UTF8Encoding();
-			byte[] buffer = encoding.GetBytes(site);
+			byte[] buffer = Encoding.UTF8.GetBytes(site);
 
 			using (var hmac = new HMACSHA512(master.Key.ToArray()))
 				_key = hmac.ComputeHash(buffer);
